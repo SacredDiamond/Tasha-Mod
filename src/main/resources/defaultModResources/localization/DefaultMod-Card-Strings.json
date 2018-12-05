@@ -3,6 +3,20 @@
 		"NAME": "Strike",
 		"DESCRIPTION": "Deal !D! damage."
 	},
+
+	"theDefault: Shot": {
+		"NAME": "Shot",
+		"DESCRIPTION": "Deal !D! damage."
+	},
+	"theDefault: Load": {
+		"NAME": "Strike",
+		"DESCRIPTION": "Gain !M! Mana."
+	},
+	"theDefault: DoubleTap": {
+		"NAME": "Double Tap",
+		"DESCRIPTION": "Deal !D! damage twice."
+	},
+
 	"theDefault: DefaultAttackWithVariable": {
 		"NAME": "Special Strike",
 		"DESCRIPTION": "Deal !D! damage [R] times. NL (Deal !ENERGY_DAMAGE! damage total.)"
