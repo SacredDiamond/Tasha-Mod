@@ -66,6 +66,7 @@ public class DefaultMod
     // Colors (RGB)
         // Character Color
         public static final Color DEFAULT_GRAY = CardHelper.getColor(64.0f, 70.0f, 70.0f);
+        public static final Color Purple = CardHelper.getColor(110.0f, 70.0f, 200.0f);
 
         // Potion Colors in RGB
         public static final Color PLACEHOLDER_POTION_lIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f); // Orange-ish Red 
@@ -147,8 +148,8 @@ public class DefaultMod
 
         logger.info("Creating the color " + AbstractCardEnum.DEFAULT_GRAY.toString());
 
-        BaseMod.addColor(AbstractCardEnum.DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY,
-                DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, DEFAULT_GRAY, makePath(ATTACK_DEAFULT_GRAY),
+        BaseMod.addColor(AbstractCardEnum.Purple, Purple, Purple, DEFAULT_GRAY,
+                DEFAULT_GRAY, Purple, Purple, Purple, makePath(ATTACK_DEAFULT_GRAY),
                 makePath(SKILL_DEAFULT_GRAY), makePath(POWER_DEAFULT_GRAY),
                 makePath(ENERGY_ORB_DEAFULT_GRAY), makePath(ATTACK_DEAFULT_GRAY_PORTRAIT),
                 makePath(SKILL_DEAFULT_GRAY_PORTRAIT), makePath(POWER_DEAFULT_GRAY_PORTRAIT),
@@ -261,6 +262,9 @@ public class DefaultMod
         BaseMod.addCard(new DefaultRareAttack());
         BaseMod.addCard(new DefaultRareSkill());
         BaseMod.addCard(new DefaultRarePower());
+        BaseMod.addCard(new Shot());
+        BaseMod.addCard(new Load());
+        BaseMod.addCard(new DoubleTap());
 
         logger.info("Making sure the cards are unlocked.");
         // Unlock the cards

@@ -7,5 +7,5 @@ public class LibraryTypeEnum {
 
     @SpireEnum
     public static CardLibrary.LibraryType DEFAULT_GRAY;
-
+    public static CardLibrary.LibraryType Purple;
 }
